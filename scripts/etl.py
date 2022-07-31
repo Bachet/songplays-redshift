@@ -1,7 +1,7 @@
 import configparser
 from psycopg2 import connect
 from psycopg2.extensions import connection, cursor
-from sql_queries import copy_table_queries, insert_table_queries
+from scripts.sql_queries import copy_table_queries, insert_table_queries
 
 
 def load_staging_tables(cur: cursor, conn: connection) -> None:

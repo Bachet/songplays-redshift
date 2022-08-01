@@ -86,7 +86,7 @@ CREATE TABLE IF NOT EXISTS songs (
     song_id VARCHAR(18) NOT NULL sortkey distkey,
     title VARCHAR(250) NOT NULL,
     artist_id VARCHAR(18) NOT NULL,
-    year INTEGER sortkey,
+    year INTEGER,
     duration FLOAT NOT NULL,
     PRIMARY KEY (song_id)
 );
